@@ -97,34 +97,56 @@ section{
 
 }
 #servicios{
-	background-color: beige;
+	
+	height: auto;
 }
 
 
 .contenedor{
 	display: flex;
+	
 
 }
 .contenedor-actividad{
 	display: flex;
 
+
+
 }
 .imagen{
 	width: 250px;
-	height: 400px;
+	height: 300px;
 	object-fit: cover;
+	box-sizing: border-box;
+	border-radius: 5px;
+	
 
 }
 .actividad{
+	padding: 20px 10px 20px;
+
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 2%;
 
 }
 .texto-actividad{
 	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	
 }
 
-
-
+.boton{
+	padding: 5px;
+	letter-spacing: 2px;
+	font-family:'Gloria Hallelujah', cursive; 
+	background-color: lightgrey;
+	color: white;
+}
+h3{
+	font-family: 'Monoton', cursive;
+}
 
 
 
@@ -134,3 +156,4 @@ footer{
 	height: 100px;
 	background-color: orange;
 }
+
