@@ -85,20 +85,51 @@ section{
 	margin-left: 10%;
 	position: absolute;
 	color: antiquewhite;
+}
 
-}
-.historia{
-	/*background-image: imagenes/p00004.jpg;*/
-	width: 400px;
-	height: 400px;
-	margin-top: 20px;
-	margin-left: 5%;
-	float: left;
-}
 #nosotros{
-	height: 600px;
+	height: 300px;
+}
+.texto-nosotros{
+	margin: 100px 30px;
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
 
 }
+#servicios{
+	background-color: beige;
+}
+
+
+.contenedor{
+	display: flex;
+
+}
+.contenedor-actividad{
+	display: flex;
+
+}
+.imagen{
+	width: 250px;
+	height: 400px;
+	object-fit: cover;
+
+}
+.actividad{
+
+}
+.texto-actividad{
+	text-align: center;
+	
+}
+
+
+
+
+
+
+
+
 footer{
 	height: 100px;
 	background-color: orange;
