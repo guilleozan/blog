@@ -59,7 +59,11 @@ header, footer, section {
 }
 .botonera ul li :hover {
 	background: #A9A9A9 ;
-	border-radius: 5px;
+	border-radius: 10px ; 
+	transform: scale(0.8);
+	transition:all 0.2s ease 0.3s;
+	border: solid black 2px;
+	
 }
 #video{
 	width: 90%;
@@ -78,6 +82,15 @@ section{
 	font-family: 'Monoton'
 	
 }
+@keyframes swing {
+	
+	
+	0% {transform: translateX(0%);}
+	100%{transform: translateX(100%);}
+
+
+	
+}
 .frase {
 
  	font-family: 'Gloria Hallelujah', cursive;
@@ -85,7 +98,12 @@ section{
 	margin-left: 10%;
 	position: absolute;
 	color: antiquewhite;
+	animation:swing 6s ease-out;
+	animation-iteration-count: infinite;
+
+
 }
+
 
 #nosotros{
 	height: 300px;
@@ -104,7 +122,13 @@ section{
 
 .contenedor{
 	display: flex;
-	
+}
+.contenedor :hover.actividad{ 
+	transform: scale(1.05);
+}
+.contenedor :hover.boton{ 
+	transform: scale(1.08);
+	text-shadow: 1px 2px #002244;
 
 }
 .contenedor-actividad{
@@ -133,8 +157,7 @@ section{
 }
 .texto-actividad{
 	text-align: center;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
+	font-family: 'Staatliches', cursive;
 }
 
 .boton{
@@ -142,10 +165,10 @@ section{
 	letter-spacing: 2px;
 	font-family:'Gloria Hallelujah', cursive; 
 	background-color: lightgrey;
-	color: white;
+	color: black;
 }
 h3{
-	font-family: 'Monoton', cursive;
+	font-family: 'Staatliches', cursive;
 }
 
 
@@ -155,5 +178,13 @@ h3{
 footer{
 	height: 100px;
 	background-color: orange;
+
+	
 }
 
+
+@media screen and (min-width:2px )and (max-width:600px) {
+	  body{
+		  background-color: blue;
+	  }
+}
