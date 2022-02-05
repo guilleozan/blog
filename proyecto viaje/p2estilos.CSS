@@ -7,37 +7,30 @@ html {
 }
 header, footer, section{
 	width:auto;
-	margin:auto;
+	margin: 10px 0px;
+
 }
-.header {
-	height: 70px;
+.marca{
+	display: flex;
+	justify-content: flex-end;
+	align-content: stretch;
+	align-content: center;
+
 	
 }
-.header1{
 
-	height: 50px;	
-	font-family: 'Monoton', cursive;
-	background-color: linear-gradient ( darkred, red)
 
-}
+/* Barra de navegacion */
+
 .logo-nav-contiene{
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
 	flex-flow: row wrap;
-	margin-top: 120px;
-	
+	font-family: 'Monoton', cursive;
+	background-color: black;
 }
-.logo{
-	float: left;
-	background-image: url(imagenes/P1.jpg);
-	height: 180px;
-	width: 300px;
-	background-size: cover;
-	object-fit: contain;
-	margin-left: 5%;
-	margin-top: 0%;
-}
+
 .botonera {
 	margin: 0px;;
 	padding: 0;
@@ -54,7 +47,7 @@ header, footer, section{
 }
 .botonera ul li a {
 	display: block;
-	color:black;
+	color:white;
 	text-decoration: none;
 	padding: 30px;	
 }
@@ -66,6 +59,10 @@ header, footer, section{
 	border: solid black 2px;
 	
 }
+
+/* Fin de barra de navegacion */
+
+
 #video{
 	width: 90%;
 	margin-left:5%;
@@ -95,27 +92,37 @@ header, footer, section{
 	margin-top: -70px;
 	margin-left: 10%;
 	position: absolute;
-	color: antiquewhite;
+	color: rgb(rgba 32, 34, 31, 0.356);
 	animation:swing 6s ease-out;
 	animation-iteration-count: infinite;
 
+
+}
+.texto-inicio{
+	display: inline-flex;
 
 }
 
 
 
 .texto-nosotros{
-	margin: 100px 30px;
+	margin: 50px 30px;
 	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
-
 }
 
 
-.contenedor{
-	display: flex;
+		/* SERVICIOS */
+
+
+.contenedor-actividad{
+display: flex;	
+justify-content: space-evenly;
+flex-flow: wrap row;
+margin: 10px 10px;;
+
 }
-.contenedor :hover.actividad{ 
+.contenedor-actividad :hover.actividad{ 
 	transform: scale(1.05);
 }
 .contenedor-actividad :hover.boton{ 
@@ -123,15 +130,17 @@ header, footer, section{
 	text-shadow: 1px 2px #002244;
 
 }
-.contenedor-actividad{
-	display: flex;
-	
-
-
+.actividad{
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10PX;
+	margin: 10px 0px;
 
 }
+
 .imagen{
-	width: 250px;
+	width: 200px;
 	height: 300px;
 	object-fit: cover;
 	box-sizing: border-box;
@@ -139,15 +148,7 @@ header, footer, section{
 	
 
 }
-.actividad{
-	padding: 20px 10px 20px;
 
-	background-color: lightgrey;
-	border: 2px solid black;
-	border-radius: 20px;
-	margin: 2%;
-
-}
 .texto-actividad{
 	text-align: center;
 	font-family: 'Staatliches', cursive;
@@ -166,6 +167,13 @@ h3{
 
 
 
+		/* FIN DE SERVICIOS */
+
+
+
+
+
+
 .row-col-lg-2{
 	margin: 20%;
 }
@@ -175,36 +183,86 @@ h3{
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	margin: 50px 5px ;
+	margin: 5px 5px ;
 	
 }
 .galeria img{
 	margin: 5px;
 
 }
-footer{
-	height: 150px;
-	
+			/* inico NOVEDADES */
 
+.novedades{
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 4px 80px;
+    padding: 10px ;
+    overflow: hidden; 
+	font-family: 'Gloria Hallelujah', cursive;
 	
 }
+.novedades h4{
+	text-align: center;
+	padding: 15px;
+}
+.imagen2{
+	width: 250px;
+	height: 300px;
+	object-fit: cover;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.novedades:nth-child(even) img{
+    float: right;
+    margin: 2px;
+}
+
+.novedades:nth-child(odd) img{
+    float: left;
+    margin: 2px;
+}
+
+
+
+
+
+		/* FIN DE NOVEDADES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PIE DE PAGINA
+ */
+
+
 .contenedor-footer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
+	justify-content: space-evenly;
+	background-color: black;
+
 	
 
 }
 .contenedor-footer div{
 
-	margin-top: 50px;
+	margin:20px;
 	padding: 15px;
 	font-family: 'Monoton', cursive;
 	
 }
 .contenedor-footer div a{
-	color: black;
+	color:white;
 	text-decoration: none;
 }
 
@@ -222,16 +280,24 @@ footer{
 
 
 
-
-
-
-
-
 .container{
 	border: solid 2px black;
 	padding: 30px;
 	box-sizing: border-box;
 }
+.derechos{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(235, 214, 214);
+	width: 100%;
+	align-content: center;
+	padding: 10px;
+}
+
+
+
+
+
 
 
 
@@ -281,175 +347,3 @@ footer{
 /* Media resolucion para pantallas entre 0 y 500px*/
 @media screen and (max-width:600px) {
 	
-	*{	margin:1px auto;
-		
-		padding: 0;
-		background-color: yellowgreen;
-	}
-	
-	
-	.header1{
-		height:100px;	
-	}
-	.logo{
-	display: flex;
-			
-	}
-	.logo-nav-contiene{
-		display: inline-flex;
-		flex-wrap: wrap-reverse;
-		justify-content: space-evenly;
-		align-items:flex-end;
-		
-	}
-	
-		
-
-	
-	.botonera {
-		margin: 0px auto;
-		padding: 0;
-		display: flex;
-	
-	
-		}
-	.botonera ul{
-		list-style: none;
-	}
-	.botonera ul li {
-		display: flex;	
-		flex-direction: column;
-
-	}
-	.botonera ul li a {
-		display:flexbox;
-		color:black;
-		text-decoration: none;
-		padding: auto;	
-	}
-	.botonera ul li :hover {
-		background: #A9A9A9 ;
-		border-radius: 10px ; 
-		transform: scale(1.05);
-		transition:all 0.2s ease 0.3s;
-		border: solid black 2px;
-		
-	}
-	#video{
-		width: 100%;
-		margin-left:5%;
-		margin-right: 5%;
-		height: 50%;
-		
-	}
-	section{
-		height:800px;
-		
-	}
-	#menu{
-		background-color: white;
-		font-family: 'Monoton'
-		
-	}
-	@keyframes swing {
-		
-		
-		0% {transform: translateX(0%);}
-		100%{transform: translateX(100%);}
-	
-	
-		
-	}
-	.frase {
-	
-		 font-family: 'Gloria Hallelujah', cursive;
-		margin-top: 0px;
-	
-		position: absolute;
-		color: antiquewhite;
-		animation:swing 6s ease-out;
-		animation-iteration-count: infinite;
-	
-	
-	}
-	
-	
-	#nosotros{
-		height:900px;
-	}
-	.texto-nosotros{
-		margin: 100px 30px;
-		font-family: 'Gloria Hallelujah', cursive;
-		text-align: center;
-	
-	}
-	#servicios{
-		
-		height: auto;
-	}
-	
-	
-	.contenedor{
-		display: flex;
-	}
-	.contenedor :hover.actividad{ 
-		transform: scale(1.05);
-	}
-	.contenedor :hover.boton{ 
-		transform: scale(1.08);
-		text-shadow: 1px 2px #002244;
-	
-	}
-	.contenedor-actividad{
-		display: flex;
-		
-	
-	
-	
-	}
-	.imagen{
-		width: 250px;
-		height: 300px;
-		object-fit: cover;
-		box-sizing: border-box;
-		border-radius: 5px;
-		
-	
-	}
-	.actividad{
-		padding: 20px 10px 20px;
-	
-		background-color: lightgrey;
-		border: 2px solid black;
-		border-radius: 20px;
-		margin: 2%;
-	
-	}
-	.texto-actividad{
-		text-align: center;
-		font-family: 'Staatliches', cursive;
-	}
-	
-	.boton{
-		padding: 5px;
-		letter-spacing: 2px;
-		font-family:'Gloria Hallelujah', cursive; 
-		background-color: lightgrey;
-		color: black;
-	}
-	h3{
-		font-family: 'Staatliches', cursive;
-	}
-	
-	
-	
-	
-	
-	footer{
-		height: 100px;
-		background-color: orange;
-		
-	
-		
-	}
-}
